@@ -41,29 +41,28 @@
         </style>
     </head>
     <body>
-        <div class="login-form">
-            <h1>Login Form</h1>
-            <form class="form-horizontal" role="form" method='POST' action='/login'>
-                <div class="form-group">
-                    <label class="control-label col-md-2" for="Username"> </label>
-                    <div class="col-md-10">
-                    <input type="text" name="Username" placeholder="Username" required>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="control-label col-md-2" for="password"> </label>
+        <div class="container">
+            <h2>Register form</h2>
+            <form class="form-horizontal" role="form" method="POST" action="/confirm"><!--actionคือUrl Pattern-->
+              <div class="form-group">
+                <label class="control-label col-md-2" for="Username">Username:</label>
                 <div class="col-md-10">
-                <input type="text" name="password" placeholder="password" required>
-            </div>
-        </div>
-
-        <div class="form-group"> 
-			<div class="col-md-offset-2 col-md-10">
-			  <button type="submit" class="btn btn-primary">Submit</button>
-			</div>
-          </div>
+                    <input type="text" class="form-control" name="Username" id="Username" placeholder="Enter Username">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-md-2" for="password">password:</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="password" id="password"  placeholder="Enter password"></textarea><!--name=attribute-->
+                </div>
+              <div class="form-group"> 
+                <div class="col-md-offset-2 col-md-10">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
             </form>
-        </div>
+    </div>
+    
     </body>
-</html>
+    </html>
+    
